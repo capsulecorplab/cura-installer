@@ -1,0 +1,23 @@
+[general]
+version = 4
+name = Ender 3 v2 PETG
+definition = creality_base
+
+[metadata]
+quality_type = standard
+type = quality_changes
+setting_version = 16
+position = 0
+intent_category = default
+
+[values]
+material_flow_layer_0 = 130
+material_print_temperature = 250
+material_print_temperature_layer_0 = 255
+speed_layer_0 = 0.5
+support_angle = 60
+support_bottom_line_width = 0.4
+support_infill_rate = 5
+support_pattern = concentric
+support_z_distance = 0.1
+

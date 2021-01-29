@@ -1,0 +1,17 @@
+[general]
+version = 4
+name = Ender 3 v2 PETG
+definition = creality_base
+
+[metadata]
+quality_type = standard
+type = quality_changes
+setting_version = 16
+
+[values]
+layer_height_0 = 0.18
+material_bed_temperature = 85
+material_bed_temperature_layer_0 = 90
+support_enable = True
+support_type = everywhere
+
