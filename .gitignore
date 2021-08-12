@@ -1,2 +1,5 @@
 # cura profiles directory
 profiles/
+
+# gh-actions keys
+gh-pages*
