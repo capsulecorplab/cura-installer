@@ -1,0 +1,28 @@
+name: Generates cura profiles & deploys to profiles branch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Ender3_v2_PETG/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Build
+        run: bash makeProfiles.sh
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # or github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: profiles
+          publish_dir: ./profiles
