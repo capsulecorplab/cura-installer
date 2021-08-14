@@ -12,6 +12,7 @@ intent_category = default
 
 [values]
 cool_fan_speed = 100.0
+infill_sparse_density = 50.0
 material_flow_layer_0 = 130
 material_print_temperature = 250
 material_print_temperature_layer_0 = 260
