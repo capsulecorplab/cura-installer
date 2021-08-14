@@ -1,6 +1,6 @@
 [general]
 version = 4
-name = Ender 3 v2 PETG
+name = Ender3_v2_PETG
 definition = creality_base
 
 [metadata]
