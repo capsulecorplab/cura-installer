@@ -13,8 +13,8 @@ intent_category = default
 [values]
 material_flow_layer_0 = 130
 material_print_temperature = 250
-material_print_temperature_layer_0 = 255
-speed_layer_0 = 0.5
+material_print_temperature_layer_0 = 260
+speed_layer_0 = 20
 support_angle = 60
 support_bottom_line_width = 0.4
 support_infill_rate = 5
