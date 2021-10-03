@@ -1,11 +1,11 @@
-name: Generates cura profiles & deploys to profiles branch
+name: Generates cura profiles & deploys to gh-pages branch
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'Ender3_v2_PETG/**'
+      - 'profiles/**'
 
 jobs:
   deploy:
@@ -25,4 +25,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # or github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: profiles
-          publish_dir: ./profiles
+          publish_dir: ./dist
