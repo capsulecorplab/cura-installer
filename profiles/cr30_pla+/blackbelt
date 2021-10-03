@@ -1,0 +1,16 @@
+[general]
+version = 4
+name = CR-30_PLA+
+definition = blackbelt
+
+[metadata]
+type = quality_changes
+quality_type = normal
+setting_version = 5
+
+[values]
+blackbelt_raft = False
+blackbelt_raft_margin = 8
+material_bed_temperature = 60
+support_enable = True
+
